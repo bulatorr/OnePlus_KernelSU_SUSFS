@@ -1507,7 +1507,7 @@ runs:
 
     - name: Apply NTSync Patch
       shell: bash
-      if: ${{ env.OP_NTSYNC == 'true' }}
+      if: ${{ env.OP_NTSYNC == 'false' }}
       run: |
         set -euo pipefail
         echo "::group::Apply NTSync patch"
